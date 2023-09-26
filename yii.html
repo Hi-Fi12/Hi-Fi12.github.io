@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Php frameworks</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-float.min.css" crossorigin="anonymous">
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-rtl.min.css" crossorigin="anonymous">
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <link type="text/css" href = "style.css" rel = "stylesheet">
+  </head>
+    <body>
+        <script>
+        $(document).foundation();
+        </script>
+        <div class="grid-x grid-padding-x headerblock">
+            <div class="large-3 large-offset-2 small-4 small-offset-1 logo">
+                <a href="index.html"><img src="source/logo.png" alt=""></a>
+            </div>
+            <div class="large-1 small-2 small-offset-1 menu">
+                <a href="index.html"menu>Главная</a>
+            </div>
+            <div class="large-2 small-2 small-offset-1 menu">
+                <a href="frameworks.html"menu>Фреймворки</a>
+            </div>
+          </div>
+        <div class="body">
+            <div class="grid-x grid-padding-x">
+                <div class="large-8 large-offset-2 small-10 small-offset-1 image">
+                  <img src="source/yii.png" alt="">
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 large-offset-2 small-10 small-offset-1 maintxt">
+                    <h1><a name="whatyii"></a>Что такое  Yii?</h1>
+                    <p>Yii – это высокопроизводительный компонентный PHP фреймворк, предназначенный для быстрой разработки современных веб-приложений. Слово Yii (произносится как Йи [ji:]) в китайском языке означает «простой и эволюционирующий». Также Yii может расшифровываться как акроним Yes It Is!</p>
+                    <h1><a name="fortest"></a>Для каких задач больше всего подходит Yii?</h1>
+                    <p>Yii – это универсальный фреймворк и может быть задействован во всех типах веб-приложений. Благодаря его компонентной структуре и отличной поддержке кэширования, фреймворк особенно подходит для разработки таких крупных проектов, как порталы, форумы, CMS, магазины или RESTful-приложения.</p>
+                    <h1><a name="comparison"></a>Сравнение Yii с другими фреймворками</h1>
+                    <p>Если вы уже знакомы с другими фреймворками, вам наверняка будет интересно сравнить их с Yii.</p>
+                    <ul class="mylist">
+                        <li>Как и многие другие PHP фреймворки, для организации кода Yii использует архитектурный паттерн MVC (Model-View-Controller).</li>
+                        <li>Yii придерживается философии простого и элегантного кода, не пытаясь усложнять дизайн только ради следования каким-либо шаблонам проектирования.</li>
+                        <li>Yii является full-stack фреймворком и включает в себя проверенные и хорошо зарекомендовавшие себя возможности, такие как ActiveRecord для реляционных и NoSQL баз данных, поддержку REST API, многоуровневое кэширование и другие.</li>
+                        <li>Yii отлично расширяем. Вы можете настроить или заменить практически любую часть основного кода. Используя архитектуру расширений, легко делиться кодом или использовать код сообщества.</li>
+                        <li>Одна из главных целей Yii – производительность.</li>
+                    </ul>
+                    <p>Yii — не проект одного человека. Он поддерживается и развивается сильной командой и большим сообществом разработчиков, которые ей помогают. Авторы фреймворка следят за тенденциями веб-разработки и развитием других проектов. Наиболее подходящие возможности и лучшие практики регулярно внедряются в фреймворк в виде простых и элегантных интерфейсов.</p>
+                    <h1><a name="versions"></a>Версии Yii</h1>
+                    <p>На данный момент существует две основные ветки Yii: 1.1 и 2.0. Ветка 1.1 является предыдущим поколением и находится в состоянии поддержки. Версия 2.0 – это полностью переписанный Yii, использующий последние технологии и протоколы, такие как Composer, PSR, пространства имен, трейты и многое другое. 2.0 — текущее поколение фреймворка. На этой версии будут сосредоточены основные усилия несколько следующих лет. Данное руководство именно о версии 2.0.</p>
+                    <h1><a name="requirements"></a>Требования к ПО и знаниям</h1>
+                    <p>Yii 2.0 требует PHP 5.4.0 и выше и наилучшим образом работает на последней версии PHP. Чтобы узнать требования для отдельных возможностей, вы можете запустить скрипт проверки требований, который поставляется с каждым релизом фреймворка.</p>
+                    <p>Для разработки на Yii потребуется общее понимание ООП, так как фреймворк полностью следует этой парадигме. Также стоит изучить такие современные возможности PHP как пространства имён и трейты. Понимание этих концепций позволит вам более легко освоиться c Yii 2.0.</p>
+                </div>    
+                <div class="large-2 large-pull-2 small-10 sidebar">
+                    <h1>Содержание</h1>
+                    <p><a href="#whatyii">Что такое Yii?</a></p>
+                    <p><a href="#fortest">Для каких задач больше всего подходит Yii?</a></p>
+                    <p><a href="#comparison">Сравнение Yii с другими фреймворками</a></p>
+                    <p><a href="#versions">Версии Yii</a></p>
+                    <p><a href="#requirements">Требования к ПО и знаниям</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="cell shrink footerblock"> 
+            <div class="grid-x grid-padding-x">
+              <div class="large-3 large-offset-2 small-4 small-offset-1 footer">
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="symfony.html">Symfony</a></p>
+                <p><a href="yii.html">Yii</a></p>
+              </div>
+              <div class="large-3 large-pull-2 footer">
+                <p><a href="frameworks.html">Фреймворки</a></p>
+                <p><a href="laravel.html">Laravel</a></p>
+                <p><a href="codeigniter.html">CodeIgniter</a></p>
+              </div>
+              <div class="large-2 large-pull-1 footer up-button">
+                <a href="#"><img src="source/up.png" alt=""></a>
+              </div>
+              <div class="ps large-offset-2 small-offset-1">
+                <p>При создании сайта был использован фреймворк Foundation</p>
+              </div>
+            </div>
+    </body>
+</html>

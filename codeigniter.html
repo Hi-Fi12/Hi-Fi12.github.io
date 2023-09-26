@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Php frameworks</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-float.min.css" crossorigin="anonymous">
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation-rtl.min.css" crossorigin="anonymous">
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <link type="text/css" href = "style.css" rel = "stylesheet">
+  </head>
+    <body>
+        <script>
+        $(document).foundation();
+        </script>
+        <div class="grid-x grid-padding-x headerblock">
+            <div class="large-3 large-offset-2 small-4 small-offset-1 logo">
+                <a href="index.html"><img src="source/logo.png" alt=""></a>
+            </div>
+            <div class="large-1 small-2 small-offset-1 menu">
+                <a href="index.html"menu>Главная</a>
+            </div>
+            <div class="large-2 small-2 small-offset-1 menu">
+                <a href="frameworks.html"menu>Фреймворки</a>
+            </div>
+          </div>
+        <div class="body">
+            <div class="grid-x grid-padding-x">
+                <div class="large-8 large-offset-2 small-10 small-offset-1 image">
+                  <img src="source/codeigniter.png" alt="">
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-6 large-offset-2 small-10 small-offset-1 maintxt">
+                    <h1><a name="welcome"></a>Добро пожаловать в CodeIgniter4</h1>
+                    <p>CodeIgniter - это платформа разработки приложений - инструментарий - для людей, которые создают веб-сайты с использованием PHP. Ее цель - дать вам возможность разрабатывать проекты намного быстрее, чем вы могли бы, если бы писали код с нуля, предоставляя богатый набор библиотек для часто необходимых задач, а также простой интерфейс и логическую структуру для доступа к этим библиотекам. CodeIgniter позволяет вам творчески сосредоточиться на вашем проекте, минимизируя объем кода, необходимый для данной задачи.</p>
+                    <p>Там, где это возможно, CodeIgniter был максимально гибким, позволяя вам работать так, как вы хотите, не будучи вынужденным работать каким-либо определенным образом. Основные части фреймворка могут быть легко расширены или полностью заменены, чтобы система работала так, как вам нужно. Короче говоря, CodeIgniter - это гибкий фреймворк, который пытается предоставить необходимые вам инструменты, оставаясь при этом в стороне.</p>
+                    <h1><a name="install"></a>Установка CodeIgniter</h1>
+                    <p>Вы можете загрузить выпуск вручную с сайта, но для этого руководства мы воспользуемся рекомендуемым способом и установим пакет AppStarter через Composer. В вашей командной строке введите следующее:</p>
+                    <p>При этом будет создана новая папка, ci-news, которая содержит код вашего приложения, с установленным CodeIgniter в папке поставщика.</p>
+                    <h1><a name="setting"></a>Настройка режима разработки</h1>
+                    <p>По умолчанию CodeIgniter запускается в рабочем режиме. Это функция безопасности, позволяющая сделать ваш сайт немного более защищенным на случай, если настройки будут изменены после его запуска. Итак, сначала давайте это исправим. Скопируйте или переименуйте env файл в .env. Откройте его.</p>
+                    <p>Этот файл содержит настройки, зависящие от сервера. Это означает, что вам никогда не потребуется передавать какую-либо конфиденциальную информацию в вашу систему контроля версий. Он включает некоторые из наиболее распространенных настроек, которые вы уже хотите ввести, хотя все они закомментированы. Поэтому раскомментируйте строку с CI_ENVIRONMENT в ней и измените production на development:</p>
+                    <h1><a name="server"></a>Запущенный сервер разработки</h1>
+                    <p>После этого пришло время просмотреть ваше приложение в браузере. Вы можете обслуживать его через любой сервер по вашему выбору, Apache, Nginx и т.д., Но CodeIgniter поставляется с простой командой, которая использует преимущества встроенного сервера PHP для быстрого запуска на ваших компьютерах разработки. Введите следующее в командной строке из корневого каталога вашего проекта:</p>
+                    <h1><a name="hello"></a>Страница приветствия</h1>
+                    <p>Теперь наведите свой браузер на правильный URL, и вас встретит экран приветствия. Попробуйте это сейчас, перейдя по следующему URL:</p>
+                </div>    
+                <div class="large-2 large-pull-2 small-10 sidebar">
+                    <h1>Содержание</h1>
+                    <p><a href="#welcome">Добро пожаловать в CodeIgniter4</a></p>
+                    <p><a href="#install">Установка CodeIgniter</a></p>
+                    <p><a href="#setting">Настройка режима разработки</a></p>
+                    <p><a href="#server">Запущенный сервер разработки</a></p>
+                    <p><a href="#hello">Страница приветствия</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="cell shrink footerblock"> 
+            <div class="grid-x grid-padding-x">
+              <div class="large-3 large-offset-2 small-4 small-offset-1 footer">
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="symfony.html">Symfony</a></p>
+                <p><a href="yii.html">Yii</a></p>
+              </div>
+              <div class="large-3 large-pull-2 footer">
+                <p><a href="frameworks.html">Фреймворки</a></p>
+                <p><a href="laravel.html">Laravel</a></p>
+                <p><a href="codeigniter.html">CodeIgniter</a></p>
+              </div>
+              <div class="large-2 large-pull-1 footer up-button">
+                <a href="#"><img src="source/up.png" alt=""></a>
+              </div>
+              <div class="ps large-offset-2 small-offset-1">
+                <p>При создании сайта был использован фреймворк Foundation</p>
+              </div>
+            </div>
+    </body>
+</html>
